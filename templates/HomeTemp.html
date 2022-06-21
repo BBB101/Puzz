@@ -1,0 +1,10 @@
+{% extends 'Header.html' %}
+{% block title %}
+    <title>HOME</title>
+{% endblock %}
+{% block body %}
+    <h2>Hello, {{ session['user'] }}</h2>
+    <form action="/Search" method="post">
+    Search Product:<input type="text" name="search"><input type="submit" value="submit">
+    </form>
+{% endblock %}

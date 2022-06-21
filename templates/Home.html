@@ -1,0 +1,15 @@
+{% extends 'Header.html' %}
+{% block title %}
+    <link rel="stylesheet" type="text/css" href="../static/Home.css">
+    <title>HOME</title>
+{% endblock %}
+{% block body %}
+
+    <div class="wrap">
+        <img src="../static/Logo.png" style="  display: block;margin-left: auto;margin-right: auto; width:50%; margin-bottom: 30px;">
+   <form action="/Search" method="POST" class="search">
+      <input type="text" class="searchTerm" name="search" placeholder="Welcome, {{ session['user'] }}. What are you looking for?" style="Height:50px" required>
+       <input type="submit" class="searchButton" value="SEARCH"></form>
+   </form>
+</div>
+{% endblock %}

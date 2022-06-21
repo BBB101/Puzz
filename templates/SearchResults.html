@@ -1,0 +1,23 @@
+{% extends 'Header.html' %}
+{% block title %}
+    <title>Search Results</title>
+{% endblock %}
+{% block body %}
+    <br><br>
+    <h2>Here Are Your Search Results:</h2>
+    <table style="text-align: center; margin-left: auto;margin-right: auto; border-spacing: 250px 30px; border-collapse: separate;">
+        <tr>
+            <th>Shop</th>
+            <th>Price</th>
+        </tr>
+        <tr><td><a href="{{ session["sValues"][0][1] }}"><img style="height:80px; width:170px;" src="../static/{{ session["sKeys"][0] }}.png"></a></td><td>{{ session["sValues"][0][0] }}</td></tr>
+        <tr><td><a href="{{ session["sValues"][1][1] }}"><img style="height:80px; width:170px;" src="../static/{{ session["sKeys"][1] }}.png"></a></td><td>{{ session["sValues"][1][0] }}</td></tr>
+        <tr><td><a href="{{ session["sValues"][2][1] }}"><img style="height:80px; width:170px;" src="../static/{{ session["sKeys"][2] }}.png"></a></td><td>{{ session["sValues"][2][0] }}</td></tr>
+        <tr><td><a href="{{ session["sValues"][3][1] }}"><img style="height:80px; width:170px;" src="../static/{{ session["sKeys"][3] }}.png"></a></td><td>{{ session["sValues"][3][0] }}</td></tr>
+        <tr><td><a href="{{ session["sValues"][4][1] }}"><img style="height:80px; width:170px;" src="../static/{{ session["sKeys"][4] }}.png"></a></td><td>{{ session["sValues"][4][0] }}</td></tr>
+        <tr><td><a href="{{ session["sValues"][5][1] }}"><img style="height:80px; width:170px;" src="../static/{{ session["sKeys"][5] }}.png"></a></td><td>{{ session["sValues"][5][0] }}</td></tr>
+        <tr><td><a href="{{ session["sValues"][6][1] }}"><img style="height:80px; width:170px;" src="../static/{{ session["sKeys"][6] }}.png"></a></td><td>{{ session["sValues"][6][0] }}</td></tr>
+        <tr><td><a href="{{ session["sValues"][7][1] }}"><img style="height:80px; width:170px;" src="../static/{{ session["sKeys"][7] }}.png"></a></td><td>{{ session["sValues"][7][0] }}</td></tr>
+    </table>
+{% endblock %}
+
